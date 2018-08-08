@@ -1,0 +1,52 @@
+.navbar {
+    &__componet {
+        grid-row: content-s/content-e;
+        grid-column: s/e;
+        background-color: crimson;
+    }
+}
+
+
+.navbar {
+    display: flex;
+    grid-template-rows: [tabs-s name-s] 50px [name-e tabs-e];
+    grid-template-columns: [main-s] 1fr [main-e tab-s] 1fr 1fr [tab-e];
+
+    height: 100%;
+    
+    &__tabs {
+        // grid-row: tabs-s/tabs-e;
+        // grid-column: tab-s/tab-e;
+        display: grid;
+        grid-template-rows: [s] 1fr [e];
+        grid-template-columns: [s]1fr 1fr 1fr 1fr[e];
+        justify-items: center;
+        align-items: center;
+
+        justify-content: center;
+
+        grid-column-gap: 60px;
+        border-bottom: 1px white;
+    }
+    .tab {
+        font-size: 6px;
+        color: rgba(255, 255, 255, .5);
+        grid-row: s/e;
+        height: 100%;
+        font-size: 1.6rem;
+        font-weight: 500;
+        line-height: 30px;
+        text-align: center;
+        width: 9rem;
+        border-bottom: 2px solid transparent;
+        &:hover {
+            transition: all .3s ease;
+            border-bottom: 2px solid rgba(255, 255, 255, .5);
+        }
+        &.active {
+            color: white;
+            border-bottom: 2px solid white;
+        }
+    }
+
+}
