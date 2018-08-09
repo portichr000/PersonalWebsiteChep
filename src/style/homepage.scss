@@ -1,6 +1,6 @@
 * {
     font-family: 'Raleway', sans-serif;
-    overflow: hidden;
+    //overflow: hidden;
 }
 
 .homepage-grid {
@@ -8,12 +8,12 @@
     width: 100vw;
     
     display: grid;
-    grid-template-rows: [s navbar-s] 52px [navbar-e] 60px [content-s] 1fr [content-e e];
-    grid-template-columns: [s]1fr [bar-e] 1fr [bar-e] 1fr[e];
+    grid-template-rows: [s navbar-s] 52px [navbar-e] 100% [content-s];
+    //grid-template-columns: [s]1fr [bar-s] 1fr [bar-e] 1fr[e];
     
     
     &__navbar {
-        grid-column: bar-s/bar-e;
+        align-items: left;
         grid-row: navbar-s/navbar-e;
     }
     
