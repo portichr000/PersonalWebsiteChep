@@ -12,17 +12,17 @@ export default class HomePage extends Component {
                 {
                   title: 'Home',
                   active: true,
-                  //component: 'Welcome'
+                  component: 'Welcome'
                 },
                 {
                     title: 'About Me',
                     active: false,
-                    //component: 'reet'
+                    component: 'reet'
                 },
                 {
                     title: 'Contact',
                     active: false,
-                    //component: 'oof'
+                    component: 'oof'
                 },
             ]
         }
